@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a1020" />
+  <meta name="description" content="A personal progress tracker for the 104-week low-latency trading and quantitative systems roadmap." />
+  <title>Signal / Systems Roadmap Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark">S<span>·</span></span><span><b>Signal / Systems</b><small>PERSONAL ROADMAP</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav">
+        <button class="nav-link active" data-view="dashboard"><span>◫</span> Overview</button>
+        <button class="nav-link" data-view="plan"><span>▤</span> 104-week plan</button>
+        <button class="nav-link" data-view="reference"><span>▧</span> Roadmap image</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-label">YOUR PACE</div>
+        <div class="sidebar-progress"><div class="mini-ring" id="sideRing"><b id="sidePct">0%</b></div><div><strong id="sideWeeks">0 / 104 weeks</strong><small id="sidePace">Set your start date</small></div></div>
+        <button class="doc-link" id="docLink"><span>↗</span> Open syllabus document</button>
+        <div class="sidebar-foot"><span class="save-dot"></span> <span id="saveState">Saved in this browser</span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="breadcrumb">ROADMAP <span>/</span> <b id="crumb">OVERVIEW</b></div><div class="top-actions"><button class="icon-btn" id="exportBtn" title="Export backup">↓</button><button class="icon-btn" id="importBtn" title="Import backup">↑</button><input hidden type="file" id="importFile" accept="application/json,.json"><button class="account-btn" id="accountBtn">Sign in to sync</button></div></header>
+      <section class="view active" id="dashboardView">
+        <div class="hero-row"><div><div class="eyebrow"><span class="live-dot"></span> YOUR 104-WEEK BUILD</div><h1>Make the hours <span>count.</span></h1><p class="hero-sub">A clear view of the work behind your low-latency systems journey.</p></div><button class="primary-btn" id="continueBtn">Continue this week <span>→</span></button></div>
+        <div class="setup-strip"><div><span class="setup-icon">◷</span><div><strong>Plan settings</strong><small>Set your start date and weekly study target.</small></div></div><label>START DATE <input type="date" id="startDate"></label><label>HOURS / WEEK <input type="number" id="weeklyTarget" min="1" max="80" value="15"></label></div>
+        <div class="stats-grid">
+          <article class="stat-card progress-card"><div class="stat-label">TOTAL PROGRESS <span>↗</span></div><div class="progress-main"><div class="big-ring" id="bigRing"><div><b id="progressPct">0%</b><small>COMPLETE</small></div></div><div class="progress-copy"><strong id="weekCount">0 <i>/ 104 weeks</i></strong><small id="progressHint">Your first week is ready when you are.</small></div></div><div class="meter"><span id="overallMeter"></span></div><div class="stat-foot"><span>104 weeks</span><span id="doneHours">0 planned hours completed</span></div></article>
+          <article class="stat-card pace-card"><div class="stat-label">SCHEDULE PACE <span>◎</span></div><div class="pace-value" id="paceValue">—</div><div class="pace-caption" id="paceCaption">Set your start date to calculate pace</div><div class="pace-chart"><div class="chart-grid"></div><svg viewBox="0 0 300 76" preserveAspectRatio="none"><path class="chart-area" d="M0,65 C36,61 44,52 72,54 S112,39 142,43 S188,29 214,32 S262,15 300,12 L300,76 L0,76Z"/><path class="chart-line" d="M0,65 C36,61 44,52 72,54 S112,39 142,43 S188,29 214,32 S262,15 300,12"/></svg></div><div class="stat-foot"><span>COMPLETED VS PLANNED WEEKS</span><span id="paceFoot">—</span></div></article>
+          <article class="stat-card hours-card"><div class="stat-label">TIME INVESTED <span>◷</span></div><div class="hours-total"><b id="actualHours">0</b><small>hours</small></div><div class="hours-compare"><span>Plan to date</span><strong id="plannedToDate">0 h</strong></div><div class="hours-compare"><span>Difference</span><strong id="hoursDelta">—</strong></div><div class="hours-note" id="hoursNote">Log actual hours each week to compare.</div></article>
+        </div>
+        <div class="section-head"><div><div class="eyebrow">THE JOURNEY</div><h2>Milestone map</h2></div><button class="text-btn" data-goto="plan">View full plan <span>→</span></button></div>
+        <div class="phase-grid" id="phaseGrid"></div>
+        <div class="bottom-grid"><section class="panel week-panel"><div class="panel-head"><div><div class="eyebrow">UP NEXT</div><h3 id="nextTitle">Your next week</h3></div><button class="arrow-btn" id="nextArrow">↗</button></div><div id="nextBody"></div></section><section class="panel rhythm-panel"><div class="panel-head"><div><div class="eyebrow">WEEKLY RHYTHM</div><h3>15-hour study split</h3></div><span class="edit-tag">EDITABLE PLAN</span></div><div class="rhythm-list"><div><span class="rhythm-dot blue"></span><span>C++ and systems programming</span><b>5h</b></div><div><span class="rhythm-dot purple"></span><span>Project implementation</span><b>4h</b></div><div><span class="rhythm-dot amber"></span><span>Mathematics</span><b>3h</b></div><div><span class="rhythm-dot green"></span><span>Research / market domain</span><b>2h</b></div><div><span class="rhythm-dot gray"></span><span>DSA maintenance</span><b>1h</b></div></div><button class="edit-split" id="editRhythm">Edit weekly split <span>✎</span></button></section></div>
+        <footer class="footnote">Your progress is saved automatically in this browser. Use export / import to back up or move your tracker.</footer>
+      </section>
+      <section class="view" id="planView"><div class="page-heading"><div><div class="eyebrow">YOUR CURRICULUM</div><h1>104-week plan</h1><p>Every topic, reading direction, and build assignment from your syllabus.</p></div><button class="secondary-btn" id="addWeekBtn">＋ Add custom week</button></div><div class="plan-toolbar"><div class="phase-tabs" id="phaseTabs"></div><div class="plan-search"><span>⌕</span><input id="searchWeeks" placeholder="Search weeks or topics"></div></div><div class="plan-summary" id="planSummary"></div><div class="week-list" id="weekList"></div></section>
+      <section class="view" id="referenceView"><div class="page-heading"><div><div class="eyebrow">AT A GLANCE</div><h1>24-month roadmap</h1><p>The supplied visual summary. Your detailed tracker follows the 104-week syllabus.</p></div><a class="secondary-btn" href="/images/roadmap.png" target="_blank" rel="noreferrer">Open full size ↗</a></div><div class="image-frame"><img src="/images/roadmap.png" alt="24-month low-latency trading and quantitative developer roadmap infographic"></div><div class="reference-note"><span>ⓘ</span><div><strong>Two views of the same journey</strong><p>The infographic groups the work into four six-month quarters. The syllabus organizes it as four 26-week phases, with roughly 15 focused hours per week. Track weekly work and actual time in the plan view.</p></div></div></section>
+    </main>
+  </div>
+  <dialog id="weekDialog"><form method="dialog" id="weekForm"><div class="modal-top"><div><span class="eyebrow" id="modalEyebrow">WEEK 01</span><h2 id="modalTitle">Week details</h2></div><button class="close-btn" value="cancel" aria-label="Close">×</button></div><div class="modal-scroll"><label class="field-label">WEEK TITLE<input id="editTitle"></label><label class="field-label">TOPICS / STUDY NOTES<textarea id="editTopics" rows="4"></textarea></label><label class="field-label">RESOURCE / READING DIRECTION<textarea id="editResources" rows="3"></textarea></label><label class="field-label">BUILD / EVIDENCE<textarea id="editDeliverable" rows="3"></textarea></label><div class="field-row"><label class="field-label">PLANNED HOURS<input id="editPlanned" type="number" min="0" step="0.5"></label><label class="field-label">ACTUAL HOURS<input id="editActual" type="number" min="0" step="0.5" placeholder="0"></label></div><label class="field-label">PERSONAL NOTES<textarea id="editNotes" rows="3" placeholder="What did you learn? What needs another pass?"></textarea></label><label class="check-row"><input id="editCompleted" type="checkbox"><span class="check-custom"></span><span><b>Mark this week complete</b><small>Counts toward your schedule progress.</small></span></label></div><div class="modal-actions"><button type="button" class="danger-link" id="deleteWeek">Delete custom week</button><span></span><button class="secondary-btn" value="cancel">Cancel</button><button class="primary-btn" id="saveWeek" value="default">Save changes</button></div></form></dialog>
+  <dialog id="rhythmDialog"><form method="dialog" id="rhythmForm"><div class="modal-top"><div><span class="eyebrow">WEEKLY TIME BUDGET</span><h2>Edit study split</h2></div><button class="close-btn" value="cancel">×</button></div><div class="modal-scroll"><p class="modal-intro">Change how your weekly target is allocated. This is a planning guide; actual hours are logged per week.</p><div class="rhythm-fields" id="rhythmFields"></div></div><div class="modal-actions"><span></span><button class="secondary-btn" value="cancel">Cancel</button><button class="primary-btn" id="saveRhythm" value="default">Save split</button></div></form></dialog>
+  <dialog id="authDialog"><form id="authForm"><div class="modal-top"><div><span class="eyebrow">CLOUD SYNC</span><h2 id="authTitle">Sign in to your tracker</h2></div><button class="close-btn" type="button" id="closeAuth">×</button></div><div class="modal-scroll"><p class="modal-intro" id="authIntro">Sign in to save your progress to your account and open it on other devices.</p><div class="auth-config-note" id="authConfigNote" hidden>Cloud sync needs a Supabase project connected to Vercel. Follow the setup guide in README.md, then redeploy this project.</div><label class="field-label">EMAIL<input id="authEmail" type="email" autocomplete="email" required></label><label class="field-label">PASSWORD<input id="authPassword" type="password" autocomplete="current-password" minlength="8" required></label><div class="auth-error" id="authError" role="status"></div><div class="auth-switch" id="authSwitch">New here? <button type="button" id="toggleAuth">Create an account</button></div></div><div class="modal-actions"><button type="button" class="danger-link" id="signOutBtn" hidden>Sign out</button><span></span><button type="button" class="secondary-btn" id="cancelAuth">Close</button><button class="primary-btn" id="authSubmit">Sign in</button></div></form></dialog>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
