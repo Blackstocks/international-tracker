@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/data/weeks.json", "destination": "/public/data/weeks.json" },
+    { "source": "/images/roadmap.png", "destination": "/public/images/roadmap.png" }
+  ]
+}
