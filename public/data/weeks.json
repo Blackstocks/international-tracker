@@ -1,0 +1,1042 @@
+[
+  {
+    "week": 1,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "C++ toolchain and build model\nLearn compiler vs linker, translation units, headers, ODR, static/shared libraries, compile flags; set up CMake, GCC/Clang, sanitizers.",
+    "topics": "C++ toolchain and build model\nLearn compiler vs linker, translation units, headers, ODR, static/shared libraries, compile flags; set up CMake, GCC/Clang, sanitizers.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Create a multi-file C++ project with CMake, unit tests and Debug/Release builds.",
+    "plannedHours": 15
+  },
+  {
+    "week": 2,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Object lifetime and storage\nStudy automatic/static/dynamic storage duration, stack vs heap, object lifetime, initialization, scope, undefined behavior.",
+    "topics": "Object lifetime and storage\nStudy automatic/static/dynamic storage duration, stack vs heap, object lifetime, initialization, scope, undefined behavior.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Write small experiments showing lifetime, initialization and UB; run AddressSanitizer/UBSan.",
+    "plannedHours": 15
+  },
+  {
+    "week": 3,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Pointers, references and const\nStudy pointer arithmetic, references, const correctness, nullptr, ownership vs borrowing, arrays and spans.",
+    "topics": "Pointers, references and const\nStudy pointer arithmetic, references, const correctness, nullptr, ownership vs borrowing, arrays and spans.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement safe byte/string views and a small dynamic array; document ownership rules.",
+    "plannedHours": 15
+  },
+  {
+    "week": 4,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Classes, invariants and RAII\nStudy constructors/destructors, invariants, RAII, rule of zero/five, exception safety, deterministic cleanup.",
+    "topics": "Classes, invariants and RAII\nStudy constructors/destructors, invariants, RAII, rule of zero/five, exception safety, deterministic cleanup.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement file/socket-like RAII wrappers and tests for cleanup on exceptions.",
+    "plannedHours": 15
+  },
+  {
+    "week": 5,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Copying, moving and value categories\nStudy lvalues/rvalues, move ctor/assignment, std::move, copy elision, perfect forwarding basics.",
+    "topics": "Copying, moving and value categories\nStudy lvalues/rvalues, move ctor/assignment, std::move, copy elision, perfect forwarding basics.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement a resource-owning type; instrument copies/moves and benchmark.",
+    "plannedHours": 15
+  },
+  {
+    "week": 6,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Smart pointers and ownership design\nStudy unique_ptr, shared_ptr, weak_ptr, cycles, custom deleters; understand why raw owning pointers are risky.",
+    "topics": "Smart pointers and ownership design\nStudy unique_ptr, shared_ptr, weak_ptr, cycles, custom deleters; understand why raw owning pointers are risky.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Build a resource manager using unique ownership; demonstrate and fix a shared_ptr cycle.",
+    "plannedHours": 15
+  },
+  {
+    "week": 7,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "STL containers and complexity\nStudy vector, deque, list, array, map, unordered_map, set; iterator invalidation and complexity.",
+    "topics": "STL containers and complexity\nStudy vector, deque, list, array, map, unordered_map, set; iterator invalidation and complexity.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Benchmark vector/deque/list for realistic insert, scan and lookup workloads.",
+    "plannedHours": 15
+  },
+  {
+    "week": 8,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Iterators, algorithms and ranges\nStudy iterator categories, algorithms, lambdas, function objects, ranges/views; avoid unnecessary allocations.",
+    "topics": "Iterators, algorithms and ranges\nStudy iterator categories, algorithms, lambdas, function objects, ranges/views; avoid unnecessary allocations.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Build a data-processing pipeline using STL algorithms and ranges; compare with loops.",
+    "plannedHours": 15
+  },
+  {
+    "week": 9,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Templates and generic programming\nStudy function/class templates, deduction, concepts, constexpr, compile-time vs runtime, template errors.",
+    "topics": "Templates and generic programming\nStudy function/class templates, deduction, concepts, constexpr, compile-time vs runtime, template errors.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement a generic fixed-capacity ring buffer and compile-time constraints.",
+    "plannedHours": 15
+  },
+  {
+    "week": 10,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Memory layout and alignment\nStudy sizeof/alignof, padding, alignment, object layout, packed data hazards, false sharing introduction.",
+    "topics": "Memory layout and alignment\nStudy sizeof/alignof, padding, alignment, object layout, packed data hazards, false sharing introduction.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Measure struct layouts; redesign structs for size/alignment and explain trade-offs.",
+    "plannedHours": 15
+  },
+  {
+    "week": 11,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Allocators and memory pools\nStudy allocator model, allocation overhead, fragmentation, arenas, pools, placement new and object lifetime.",
+    "topics": "Allocators and memory pools\nStudy allocator model, allocation overhead, fragmentation, arenas, pools, placement new and object lifetime.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement a fixed-size object pool and compare allocation throughput with new/delete.",
+    "plannedHours": 15
+  },
+  {
+    "week": 12,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Cache hierarchy and locality\nStudy cache lines, spatial/temporal locality, cache misses, working sets, AoS vs SoA.",
+    "topics": "Cache hierarchy and locality\nStudy cache lines, spatial/temporal locality, cache misses, working sets, AoS vs SoA.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Benchmark AoS vs SoA over large datasets; collect repeated measurements.",
+    "plannedHours": 15
+  },
+  {
+    "week": 13,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "CPU architecture essentials\nStudy instruction pipeline, branch prediction, out-of-order execution, SIMD overview, frequency scaling, SMT.",
+    "topics": "CPU architecture essentials\nStudy instruction pipeline, branch prediction, out-of-order execution, SIMD overview, frequency scaling, SMT.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Write branch-friendly vs branch-unfriendly benchmarks; inspect compiler assembly.",
+    "plannedHours": 15
+  },
+  {
+    "week": 14,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Linux shell and process model\nStudy Linux filesystem, permissions, processes, fork/exec/wait, signals, environment, file descriptors.",
+    "topics": "Linux shell and process model\nStudy Linux filesystem, permissions, processes, fork/exec/wait, signals, environment, file descriptors.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Write a small process supervisor that launches, waits for and reports child processes.",
+    "plannedHours": 15
+  },
+  {
+    "week": 15,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "System calls and file I/O\nStudy user/kernel boundary, read/write, buffered vs unbuffered I/O, mmap basics, errno and partial I/O.",
+    "topics": "System calls and file I/O\nStudy user/kernel boundary, read/write, buffered vs unbuffered I/O, mmap basics, errno and partial I/O.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Build a robust file copier/logger handling partial reads/writes and errors.",
+    "plannedHours": 15
+  },
+  {
+    "week": 16,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Virtual memory and page behavior\nStudy address spaces, paging, page tables, page faults, mmap, copy-on-write, huge pages conceptually.",
+    "topics": "Virtual memory and page behavior\nStudy address spaces, paging, page tables, page faults, mmap, copy-on-write, huge pages conceptually.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Measure page-touch cost and sequential vs random memory access.",
+    "plannedHours": 15
+  },
+  {
+    "week": 17,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Processes, threads and scheduling\nStudy process vs thread, context switches, scheduling, CPU affinity basics, race conditions.",
+    "topics": "Processes, threads and scheduling\nStudy process vs thread, context switches, scheduling, CPU affinity basics, race conditions.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Create a multithreaded workload; measure context-switch and scheduling effects.",
+    "plannedHours": 15
+  },
+  {
+    "week": 18,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Thread fundamentals\nStudy std::thread, join/detach, thread ownership, data races, thread-safe design.",
+    "topics": "Thread fundamentals\nStudy std::thread, join/detach, thread ownership, data races, thread-safe design.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Build a parallel file/record processor and test correctness under repeated runs.",
+    "plannedHours": 15
+  },
+  {
+    "week": 19,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Mutexes and lock discipline\nStudy mutex, lock_guard, unique_lock, scoped_lock, critical sections, lock ordering and deadlocks.",
+    "topics": "Mutexes and lock discipline\nStudy mutex, lock_guard, unique_lock, scoped_lock, critical sections, lock ordering and deadlocks.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement a concurrent counter and shared queue; reproduce and eliminate deadlock.",
+    "plannedHours": 15
+  },
+  {
+    "week": 20,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Condition variables\nStudy wait predicates, spurious wakeups, notify_one/all, shutdown protocols, bounded buffers.",
+    "topics": "Condition variables\nStudy wait predicates, spurious wakeups, notify_one/all, shutdown protocols, bounded buffers.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement bounded producer-consumer queue with clean shutdown and stress tests.",
+    "plannedHours": 15
+  },
+  {
+    "week": 21,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Futures, promises and thread pools\nStudy packaged_task, future, promise, async caveats, task queues, worker lifecycle.",
+    "topics": "Futures, promises and thread pools\nStudy packaged_task, future, promise, async caveats, task queues, worker lifecycle.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Build a fixed-size thread pool with futures, exception propagation and shutdown.",
+    "plannedHours": 15
+  },
+  {
+    "week": 22,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Atomics and memory model I\nStudy atomic types, load/store, relaxed ordering, data-race rules, compiler/hardware reordering.",
+    "topics": "Atomics and memory model I\nStudy atomic types, load/store, relaxed ordering, data-race rules, compiler/hardware reordering.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement atomic counters and publish/consume examples; compare mutex and atomic.",
+    "plannedHours": 15
+  },
+  {
+    "week": 23,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Memory ordering II and SPSC\nStudy acquire/release, happens-before, fences at a conceptual level, SPSC ring-buffer invariants.",
+    "topics": "Memory ordering II and SPSC\nStudy acquire/release, happens-before, fences at a conceptual level, SPSC ring-buffer invariants.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement SPSC queue; test wraparound, full/empty states and producer-consumer stress.",
+    "plannedHours": 15
+  },
+  {
+    "week": 24,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "CAS, ABA and lock-free basics\nStudy compare_exchange, weak vs strong CAS, ABA problem, progress guarantees; distinguish lock-free/wait-free.",
+    "topics": "CAS, ABA and lock-free basics\nStudy compare_exchange, weak vs strong CAS, ABA problem, progress guarantees; distinguish lock-free/wait-free.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Implement a simple Treiber stack for learning only; document ABA and reclamation risks.",
+    "plannedHours": 15
+  },
+  {
+    "week": 25,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Profiling and debugging\nStudy GDB, perf stat/record, flame graphs, compiler optimization levels, sanitizers and benchmark pitfalls.",
+    "topics": "Profiling and debugging\nStudy GDB, perf stat/record, flame graphs, compiler optimization levels, sanitizers and benchmark pitfalls.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Profile a CPU-bound program; identify one bottleneck and submit a reproducible report.",
+    "plannedHours": 15
+  },
+  {
+    "week": 26,
+    "phase": 1,
+    "phaseName": "C++ and Systems Foundations",
+    "title": "Phase 1 integration and review\nReview C++ object model, ownership, STL, memory, Linux, concurrency, atomics and profiling.",
+    "topics": "Phase 1 integration and review\nReview C++ object model, ownership, STL, memory, Linux, concurrency, atomics and profiling.",
+    "resources": "LearnCpp / cppreference / C++ Core Guidelines; OSTEP / CS:APP; GDB + perf docs",
+    "deliverable": "Deliver a tested C++ systems toolkit: ring buffer, pool, thread pool, benchmarks and design notes.",
+    "plannedHours": 15
+  },
+  {
+    "week": 27,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Market structure and exchange mechanics\nStudy exchanges, participants, order types, bid/ask, spread, depth, tick size, queue position, maker/taker fees.",
+    "topics": "Market structure and exchange mechanics\nStudy exchanges, participants, order types, bid/ask, spread, depth, tick size, queue position, maker/taker fees.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Write a market microstructure glossary and simulate a tiny price-time-priority queue by hand.",
+    "plannedHours": 15
+  },
+  {
+    "week": 28,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Limit order book representation\nStudy price levels, FIFO queues, order IDs, maps vs arrays, hash tables, indexing trade-offs.",
+    "topics": "Limit order book representation\nStudy price levels, FIFO queues, order IDs, maps vs arrays, hash tables, indexing trade-offs.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Design LOB structures; implement add order and top-of-book queries.",
+    "plannedHours": 15
+  },
+  {
+    "week": 29,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Matching engine: core matching\nStudy price-time priority, crossing logic, execution reports, invariants and deterministic behavior.",
+    "topics": "Matching engine: core matching\nStudy price-time priority, crossing logic, execution reports, invariants and deterministic behavior.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Implement continuous limit-order matching with unit tests.",
+    "plannedHours": 15
+  },
+  {
+    "week": 30,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Partial fills, cancel and replace\nStudy remaining quantity, order lifecycle, cancel/replace semantics, priority loss on modify.",
+    "topics": "Partial fills, cancel and replace\nStudy remaining quantity, order lifecycle, cancel/replace semantics, priority loss on modify.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Add partial fills, cancel and replace; test edge cases and invariants.",
+    "plannedHours": 15
+  },
+  {
+    "week": 31,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Multi-level book and performance\nStudy price-level indexing, ordered maps, dense arrays, intrusive lists and memory locality.",
+    "topics": "Multi-level book and performance\nStudy price-level indexing, ordered maps, dense arrays, intrusive lists and memory locality.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Benchmark alternative price-level structures using synthetic workloads.",
+    "plannedHours": 15
+  },
+  {
+    "week": 32,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Event-driven architecture\nStudy event loops, state machines, command/event separation, single-writer principle, deterministic processing.",
+    "topics": "Event-driven architecture\nStudy event loops, state machines, command/event separation, single-writer principle, deterministic processing.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Refactor matching engine into a single-threaded event-driven core.",
+    "plannedHours": 15
+  },
+  {
+    "week": 33,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Replay, audit and determinism\nStudy event sourcing, append-only logs, sequence numbers, replay and reproducibility.",
+    "topics": "Replay, audit and determinism\nStudy event sourcing, append-only logs, sequence numbers, replay and reproducibility.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Persist input events and reproduce identical final book state from replay.",
+    "plannedHours": 15
+  },
+  {
+    "week": 34,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Testing financial state machines\nStudy property-based testing, invariants, fuzzing, randomized testing and differential testing.",
+    "topics": "Testing financial state machines\nStudy property-based testing, invariants, fuzzing, randomized testing and differential testing.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Generate random order/cancel streams; assert book invariants after every event.",
+    "plannedHours": 15
+  },
+  {
+    "week": 35,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Benchmark methodology\nStudy throughput vs latency, warm-up, p50/p90/p99/p99.9, coordinated omission, clock sources.",
+    "topics": "Benchmark methodology\nStudy throughput vs latency, warm-up, p50/p90/p99/p99.9, coordinated omission, clock sources.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Create repeatable LOB benchmarks and publish baseline distributions.",
+    "plannedHours": 15
+  },
+  {
+    "week": 36,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "TCP fundamentals\nStudy TCP connection lifecycle, byte streams, framing, congestion control, Nagle, keepalive and failure modes.",
+    "topics": "TCP fundamentals\nStudy TCP connection lifecycle, byte streams, framing, congestion control, Nagle, keepalive and failure modes.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Build a TCP client/server with explicit message framing and reconnect handling.",
+    "plannedHours": 15
+  },
+  {
+    "week": 37,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "UDP fundamentals\nStudy datagrams, loss, reordering, duplication, MTU, checksums and application-level reliability.",
+    "topics": "UDP fundamentals\nStudy datagrams, loss, reordering, duplication, MTU, checksums and application-level reliability.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Build UDP sender/receiver; measure loss and reordering on localhost/network.",
+    "plannedHours": 15
+  },
+  {
+    "week": 38,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Linux sockets and nonblocking I/O\nStudy socket API, bind/listen/accept/connect, nonblocking mode, poll/select/epoll, edge vs level triggering.",
+    "topics": "Linux sockets and nonblocking I/O\nStudy socket API, bind/listen/accept/connect, nonblocking mode, poll/select/epoll, edge vs level triggering.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Build an epoll-based multi-client receiver with backpressure.",
+    "plannedHours": 15
+  },
+  {
+    "week": 39,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Binary protocol design\nStudy endianness, alignment, packed fields, length-prefixing, versioning, schema evolution and validation.",
+    "topics": "Binary protocol design\nStudy endianness, alignment, packed fields, length-prefixing, versioning, schema evolution and validation.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Design and parse a compact binary market-data protocol with malformed-input tests.",
+    "plannedHours": 15
+  },
+  {
+    "week": 40,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Serialization and zero-copy concepts\nStudy copies vs views, scatter/gather I/O, readv/writev, mmap and safe parsing from byte spans.",
+    "topics": "Serialization and zero-copy concepts\nStudy copies vs views, scatter/gather I/O, readv/writev, mmap and safe parsing from byte spans.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Implement a bounds-checked parser and compare copying vs view-based parsing.",
+    "plannedHours": 15
+  },
+  {
+    "week": 41,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "UDP multicast and market data\nStudy multicast group basics, feed channels, packet sequence numbers, snapshots and incremental updates.",
+    "topics": "UDP multicast and market data\nStudy multicast group basics, feed channels, packet sequence numbers, snapshots and incremental updates.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Simulate a multicast-like feed locally; implement sequence gap detection.",
+    "plannedHours": 15
+  },
+  {
+    "week": 42,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Recovery and replay\nStudy snapshot recovery, retransmission requests, gap fill, duplicate suppression and state resynchronization.",
+    "topics": "Recovery and replay\nStudy snapshot recovery, retransmission requests, gap fill, duplicate suppression and state resynchronization.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Implement a feed handler that detects gaps and recovers from a local snapshot/replay source.",
+    "plannedHours": 15
+  },
+  {
+    "week": 43,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Network buffers and backpressure\nStudy ring buffers, bounded queues, overload policies, batching, drops vs blocking and queue depth.",
+    "topics": "Network buffers and backpressure\nStudy ring buffers, bounded queues, overload policies, batching, drops vs blocking and queue depth.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Add bounded buffering and overload metrics to feed handler.",
+    "plannedHours": 15
+  },
+  {
+    "week": 44,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Kernel networking path\nStudy NIC, DMA, interrupts, NAPI, kernel socket buffers, copies, context switches and RSS conceptually.",
+    "topics": "Kernel networking path\nStudy NIC, DMA, interrupts, NAPI, kernel socket buffers, copies, context switches and RSS conceptually.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Trace packet path with Linux tools; document where latency and copies can occur.",
+    "plannedHours": 15
+  },
+  {
+    "week": 45,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Latency measurement and clocks\nStudy monotonic clocks, TSC caveats, timestamp placement, clock drift, percentiles and histogram design.",
+    "topics": "Latency measurement and clocks\nStudy monotonic clocks, TSC caveats, timestamp placement, clock drift, percentiles and histogram design.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Instrument receive-to-parse-to-book pipeline; report p50/p99/p99.9.",
+    "plannedHours": 15
+  },
+  {
+    "week": 46,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "CPU and network tuning\nStudy CPU affinity, IRQ affinity conceptually, busy polling trade-offs, batching, socket buffer sizing.",
+    "topics": "CPU and network tuning\nStudy CPU affinity, IRQ affinity conceptually, busy polling trade-offs, batching, socket buffer sizing.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Run controlled tuning experiments; change one variable at a time and report results.",
+    "plannedHours": 15
+  },
+  {
+    "week": 47,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Market data normalization\nStudy symbol mapping, timestamps, sequence spaces, snapshot/incremental semantics and feed normalization.",
+    "topics": "Market data normalization\nStudy symbol mapping, timestamps, sequence spaces, snapshot/incremental semantics and feed normalization.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Normalize two synthetic feed formats into a common internal event model.",
+    "plannedHours": 15
+  },
+  {
+    "week": 48,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Order gateway and OMS basics\nStudy order lifecycle, client IDs, exchange IDs, acknowledgements, rejects, timeouts and idempotency.",
+    "topics": "Order gateway and OMS basics\nStudy order lifecycle, client IDs, exchange IDs, acknowledgements, rejects, timeouts and idempotency.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Build a simulated order gateway and OMS state machine.",
+    "plannedHours": 15
+  },
+  {
+    "week": 49,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Risk checks and safety controls\nStudy max order size, position limits, price collars, duplicate protection, kill switch and pre-trade validation.",
+    "topics": "Risk checks and safety controls\nStudy max order size, position limits, price collars, duplicate protection, kill switch and pre-trade validation.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Add deterministic pre-trade risk checks to the simulator.",
+    "plannedHours": 15
+  },
+  {
+    "week": 50,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Integration: feed to book\nStudy end-to-end pipeline design, ownership boundaries, queues, sequencing and failure isolation.",
+    "topics": "Integration: feed to book\nStudy end-to-end pipeline design, ownership boundaries, queues, sequencing and failure isolation.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Connect feed handler to LOB; replay recorded synthetic events end-to-end.",
+    "plannedHours": 15
+  },
+  {
+    "week": 51,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "End-to-end performance and fault tests\nStudy load generation, tail latency, burst traffic, packet gaps, restart/recovery and benchmark reporting.",
+    "topics": "End-to-end performance and fault tests\nStudy load generation, tail latency, burst traffic, packet gaps, restart/recovery and benchmark reporting.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Run stress/failure suite; publish architecture diagram, tests and performance report.",
+    "plannedHours": 15
+  },
+  {
+    "week": 52,
+    "phase": 2,
+    "phaseName": "Trading Systems and Networking",
+    "title": "Phase 2 project release\nReview market structure, matching, protocols, recovery, event-driven systems and measurement.",
+    "topics": "Phase 2 project release\nReview market structure, matching, protocols, recovery, event-driven systems and measurement.",
+    "resources": "Trading and Exchanges; Beej's Guide; Linux man-pages; kernel docs; DPDK guide as relevant",
+    "deliverable": "Release C++ matching engine + feed handler with docs, deterministic replay and benchmarks.",
+    "plannedHours": 15
+  },
+  {
+    "week": 53,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Lock-free algorithm foundations\nStudy linearizability, atomicity, progress guarantees, lock-free vs wait-free, contention.",
+    "topics": "Lock-free algorithm foundations\nStudy linearizability, atomicity, progress guarantees, lock-free vs wait-free, contention.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Write correctness histories for a concurrent queue; compare with mutex queue.",
+    "plannedHours": 15
+  },
+  {
+    "week": 54,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "CAS loops and contention\nStudy compare_exchange loops, backoff, cache-line bouncing, contention patterns and fairness.",
+    "topics": "CAS loops and contention\nStudy compare_exchange loops, backoff, cache-line bouncing, contention patterns and fairness.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Benchmark atomic counter/queue under 1..N threads; plot throughput and tail latency.",
+    "plannedHours": 15
+  },
+  {
+    "week": 55,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Memory reclamation\nStudy why freeing nodes is hard, hazard pointers, epoch-based reclamation, RCU overview.",
+    "topics": "Memory reclamation\nStudy why freeing nodes is hard, hazard pointers, epoch-based reclamation, RCU overview.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Implement a small hazard-pointer protected structure or carefully scoped educational prototype.",
+    "plannedHours": 15
+  },
+  {
+    "week": 56,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Advanced C++ performance\nStudy allocator propagation, small-buffer optimization, type erasure, noexcept moves, ABI awareness.",
+    "topics": "Advanced C++ performance\nStudy allocator propagation, small-buffer optimization, type erasure, noexcept moves, ABI awareness.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Optimize a hot-path data type; inspect allocations and generated assembly.",
+    "plannedHours": 15
+  },
+  {
+    "week": 57,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Branching and instruction-level tuning\nStudy branch prediction, branchless techniques, instruction count, dependency chains and compiler optimization.",
+    "topics": "Branching and instruction-level tuning\nStudy branch prediction, branchless techniques, instruction count, dependency chains and compiler optimization.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Benchmark branch-heavy and branch-reduced parsers; avoid assuming branchless is always faster.",
+    "plannedHours": 15
+  },
+  {
+    "week": 58,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "SIMD and vectorization\nStudy SIMD concepts, compiler auto-vectorization, alignment, data layout and intrinsics overview.",
+    "topics": "SIMD and vectorization\nStudy SIMD concepts, compiler auto-vectorization, alignment, data layout and intrinsics overview.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Vectorize a simple checksum/parser operation; compare scalar and compiler-vectorized versions.",
+    "plannedHours": 15
+  },
+  {
+    "week": 59,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "NUMA and CPU topology\nStudy sockets, cores, SMT, NUMA nodes, memory locality, first-touch and affinity.",
+    "topics": "NUMA and CPU topology\nStudy sockets, cores, SMT, NUMA nodes, memory locality, first-touch and affinity.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Inspect topology with lscpu/numactl; benchmark local vs remote memory where available.",
+    "plannedHours": 15
+  },
+  {
+    "week": 60,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Kernel bypass concepts\nStudy kernel networking overhead, user-space drivers, polling, DMA, huge pages and trade-offs.",
+    "topics": "Kernel bypass concepts\nStudy kernel networking overhead, user-space drivers, polling, DMA, huge pages and trade-offs.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Draw a kernel-bypass packet path; compare conventional sockets to a high-level DPDK sample.",
+    "plannedHours": 15
+  },
+  {
+    "week": 61,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "DPDK architecture and setup\nStudy EAL, hugepages, lcores, mempools, mbufs, poll-mode drivers and ring libraries.",
+    "topics": "DPDK architecture and setup\nStudy EAL, hugepages, lcores, mempools, mbufs, poll-mode drivers and ring libraries.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Set up DPDK in a Linux VM or supported machine; run an official sample if hardware allows.",
+    "plannedHours": 15
+  },
+  {
+    "week": 62,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "DPDK packet processing\nStudy RX/TX bursts, queue configuration, packet parsing, batching, mbuf ownership.",
+    "topics": "DPDK packet processing\nStudy RX/TX bursts, queue configuration, packet parsing, batching, mbuf ownership.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Build a minimal DPDK packet counter/parser if supported; otherwise create a portable packet-processing abstraction.",
+    "plannedHours": 15
+  },
+  {
+    "week": 63,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Performance engineering methodology\nStudy experimental design, baselines, variance, confidence intervals, regression tracking and reproducible environments.",
+    "topics": "Performance engineering methodology\nStudy experimental design, baselines, variance, confidence intervals, regression tracking and reproducible environments.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Create automated benchmark scripts and compare at least three implementations fairly.",
+    "plannedHours": 15
+  },
+  {
+    "week": 64,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Latency distributions and tail behavior\nStudy histograms, percentiles, p99.9/p99.99, outliers, coordinated omission and queueing effects.",
+    "topics": "Latency distributions and tail behavior\nStudy histograms, percentiles, p99.9/p99.99, outliers, coordinated omission and queueing effects.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Build a latency histogram tool; compare unloaded vs burst-loaded pipeline.",
+    "plannedHours": 15
+  },
+  {
+    "week": 65,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Probability for trading I: foundations\nStudy sample spaces, combinatorics, conditional probability, Bayes, independence, expectation and variance.",
+    "topics": "Probability for trading I: foundations\nStudy sample spaces, combinatorics, conditional probability, Bayes, independence, expectation and variance.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Solve probability exercises; write Python simulations to verify analytic results.",
+    "plannedHours": 15
+  },
+  {
+    "week": 66,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Probability II: distributions and limits\nStudy Bernoulli, binomial, geometric, Poisson, exponential, normal, joint distributions, LLN and CLT.",
+    "topics": "Probability II: distributions and limits\nStudy Bernoulli, binomial, geometric, Poisson, exponential, normal, joint distributions, LLN and CLT.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Simulate distributions and convergence; model arrivals with Poisson/exponential assumptions.",
+    "plannedHours": 15
+  },
+  {
+    "week": 67,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Statistics I: estimation\nStudy sampling, bias/variance, estimators, standard errors, confidence intervals and bootstrap.",
+    "topics": "Statistics I: estimation\nStudy sampling, bias/variance, estimators, standard errors, confidence intervals and bootstrap.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Analyze synthetic trade data; estimate mean return and confidence intervals.",
+    "plannedHours": 15
+  },
+  {
+    "week": 68,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Statistics II: testing and regression\nStudy null hypotheses, p-values, multiple testing, correlation, covariance, OLS and residual diagnostics.",
+    "topics": "Statistics II: testing and regression\nStudy null hypotheses, p-values, multiple testing, correlation, covariance, OLS and residual diagnostics.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Test whether synthetic OFI predicts next price change; avoid leakage and report uncertainty.",
+    "plannedHours": 15
+  },
+  {
+    "week": 69,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Time series and financial data\nStudy log returns, autocorrelation, stationarity, volatility clustering, rolling windows and sampling frequency.",
+    "topics": "Time series and financial data\nStudy log returns, autocorrelation, stationarity, volatility clustering, rolling windows and sampling frequency.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Build Python analysis of synthetic or public market data; compare returns and volatility estimates.",
+    "plannedHours": 15
+  },
+  {
+    "week": 70,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Stochastic processes\nStudy random walks, Markov chains, Poisson processes, Brownian motion, martingales and stopping times.",
+    "topics": "Stochastic processes\nStudy random walks, Markov chains, Poisson processes, Brownian motion, martingales and stopping times.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Simulate random walks and order arrivals; estimate transition and event-rate properties.",
+    "plannedHours": 15
+  },
+  {
+    "week": 71,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Market microstructure research\nStudy spread, depth, queue imbalance, order flow imbalance, adverse selection and price impact.",
+    "topics": "Market microstructure research\nStudy spread, depth, queue imbalance, order flow imbalance, adverse selection and price impact.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Implement OFI features from event data and test short-horizon association.",
+    "plannedHours": 15
+  },
+  {
+    "week": 72,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Market making models\nStudy reservation price, inventory risk, quote skew, fill probability and Avellaneda-Stoikov assumptions.",
+    "topics": "Market making models\nStudy reservation price, inventory risk, quote skew, fill probability and Avellaneda-Stoikov assumptions.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Implement a basic Avellaneda-Stoikov-style quoting simulator; state assumptions explicitly.",
+    "plannedHours": 15
+  },
+  {
+    "week": 73,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Execution and transaction costs\nStudy VWAP/TWAP, market impact, slippage, maker/taker fees, queue position and execution benchmarks.",
+    "topics": "Execution and transaction costs\nStudy VWAP/TWAP, market impact, slippage, maker/taker fees, queue position and execution benchmarks.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Simulate execution schedules with fees, slippage and simple impact assumptions.",
+    "plannedHours": 15
+  },
+  {
+    "week": 74,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Backtesting methodology\nStudy event-driven simulation, look-ahead bias, survivorship bias, overfitting, train/test splits and walk-forward testing.",
+    "topics": "Backtesting methodology\nStudy event-driven simulation, look-ahead bias, survivorship bias, overfitting, train/test splits and walk-forward testing.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Build an event-driven backtester with realistic event ordering and transaction costs.",
+    "plannedHours": 15
+  },
+  {
+    "week": 75,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Risk and portfolio mathematics\nStudy P&L, exposure, drawdown, Sharpe/Sortino, VaR limitations, inventory and position constraints.",
+    "topics": "Risk and portfolio mathematics\nStudy P&L, exposure, drawdown, Sharpe/Sortino, VaR limitations, inventory and position constraints.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Add risk metrics and inventory constraints to market-making simulator.",
+    "plannedHours": 15
+  },
+  {
+    "week": 76,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Research paper reproduction I\nRead Cont, Kukanov & Stoikov on order-book events and price impact; understand model, data and limitations.",
+    "topics": "Research paper reproduction I\nRead Cont, Kukanov & Stoikov on order-book events and price impact; understand model, data and limitations.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Reproduce a simplified OFI/price-impact experiment on synthetic/public data.",
+    "plannedHours": 15
+  },
+  {
+    "week": 77,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Research paper reproduction II\nRead Avellaneda & Stoikov; derive reservation price and spread intuition; inspect assumptions and parameter sensitivity.",
+    "topics": "Research paper reproduction II\nRead Avellaneda & Stoikov; derive reservation price and spread intuition; inspect assumptions and parameter sensitivity.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Reproduce baseline market-making simulation and vary risk aversion/volatility/arrival intensity.",
+    "plannedHours": 15
+  },
+  {
+    "week": 78,
+    "phase": 3,
+    "phaseName": "Advanced Performance and Quantitative Research",
+    "title": "Phase 3 research release\nReview lock-free/performance, probability/statistics, stochastic processes, microstructure and backtesting.",
+    "topics": "Phase 3 research release\nReview lock-free/performance, probability/statistics, stochastic processes, microstructure and backtesting.",
+    "resources": "C++ Concurrency in Action; Brendan Gregg; Harvard Stat 110; MIT 18.06; Shreve; market papers",
+    "deliverable": "Release performance framework and research report with methodology, baselines, limitations and reproducible code.",
+    "plannedHours": 15
+  },
+  {
+    "week": 79,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Tick-to-trade architecture\nStudy market data ingress, normalization, strategy, risk, OMS, gateway, telemetry and failure boundaries.",
+    "topics": "Tick-to-trade architecture\nStudy market data ingress, normalization, strategy, risk, OMS, gateway, telemetry and failure boundaries.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Draw and implement a modular simulated tick-to-trade architecture.",
+    "plannedHours": 15
+  },
+  {
+    "week": 80,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "OMS state machines and idempotency\nStudy order states, duplicate messages, retries, timeouts, cancel races and reconciliation.",
+    "topics": "OMS state machines and idempotency\nStudy order states, duplicate messages, retries, timeouts, cancel races and reconciliation.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Test OMS against delayed, duplicated and out-of-order simulated exchange messages.",
+    "plannedHours": 15
+  },
+  {
+    "week": 81,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Distributed systems fundamentals\nStudy failure models, partial failure, consistency, replication, leader/follower, delivery semantics.",
+    "topics": "Distributed systems fundamentals\nStudy failure models, partial failure, consistency, replication, leader/follower, delivery semantics.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Build a small replicated event log or state replication demo.",
+    "plannedHours": 15
+  },
+  {
+    "week": 82,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Consensus and recovery\nStudy Raft concepts, terms, elections, log replication, snapshots and recovery limits.",
+    "topics": "Consensus and recovery\nStudy Raft concepts, terms, elections, log replication, snapshots and recovery limits.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Implement or simulate a small Raft-inspired replicated log; focus on correctness not production readiness.",
+    "plannedHours": 15
+  },
+  {
+    "week": 83,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Messaging and event transport\nStudy pub/sub, queues, ordering, at-least-once vs at-most-once, backpressure and schema evolution.",
+    "topics": "Messaging and event transport\nStudy pub/sub, queues, ordering, at-least-once vs at-most-once, backpressure and schema evolution.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Integrate a message bus or lightweight transport into a non-critical telemetry path.",
+    "plannedHours": 15
+  },
+  {
+    "week": 84,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Fault tolerance and chaos testing\nStudy crash recovery, restart, replay, failover, degraded modes and kill switches.",
+    "topics": "Fault tolerance and chaos testing\nStudy crash recovery, restart, replay, failover, degraded modes and kill switches.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Inject failures into simulator; prove recovery and document unsupported failure modes.",
+    "plannedHours": 15
+  },
+  {
+    "week": 85,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Clock synchronization and timestamping\nStudy monotonic vs wall clocks, NTP/PTP concepts, hardware timestamping, clock offset and drift.",
+    "topics": "Clock synchronization and timestamping\nStudy monotonic vs wall clocks, NTP/PTP concepts, hardware timestamping, clock offset and drift.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Create timestamping experiment; quantify measurement error and avoid false precision.",
+    "plannedHours": 15
+  },
+  {
+    "week": 86,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Observability and production diagnostics\nStudy structured logs, metrics, tracing, flame graphs, SLOs, alerting and performance regression.",
+    "topics": "Observability and production diagnostics\nStudy structured logs, metrics, tracing, flame graphs, SLOs, alerting and performance regression.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Add metrics/tracing to pipeline; create a dashboard or static report for latency and drops.",
+    "plannedHours": 15
+  },
+  {
+    "week": 87,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Security and operational hygiene\nStudy threat modeling, secrets, least privilege, dependency hygiene, input validation and secure deployment.",
+    "topics": "Security and operational hygiene\nStudy threat modeling, secrets, least privilege, dependency hygiene, input validation and secure deployment.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Threat-model simulator/feed handler; remove unsafe assumptions and add fuzzing.",
+    "plannedHours": 15
+  },
+  {
+    "week": 88,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "System design: low-latency services\nStudy event-driven design, single-writer, sharding, queues, overload, persistence and failure isolation.",
+    "topics": "System design: low-latency services\nStudy event-driven design, single-writer, sharding, queues, overload, persistence and failure isolation.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Write and defend a low-latency market-data/order gateway design.",
+    "plannedHours": 15
+  },
+  {
+    "week": 89,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "System design: data and replay\nStudy event sourcing, snapshots, retention, deterministic replay, schema versioning and audit.",
+    "topics": "System design: data and replay\nStudy event sourcing, snapshots, retention, deterministic replay, schema versioning and audit.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Design replayable event store with versioned event schema.",
+    "plannedHours": 15
+  },
+  {
+    "week": 90,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Advanced C++ interview practice\nReview object lifetime, templates, move semantics, STL complexity, allocators, ABI, undefined behavior.",
+    "topics": "Advanced C++ interview practice\nReview object lifetime, templates, move semantics, STL complexity, allocators, ABI, undefined behavior.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Solve 2–3 C++ implementation/design exercises; explain trade-offs aloud.",
+    "plannedHours": 15
+  },
+  {
+    "week": 91,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Concurrency interview practice\nReview races, deadlocks, memory model, atomics, lock-free correctness, false sharing and queue design.",
+    "topics": "Concurrency interview practice\nReview races, deadlocks, memory model, atomics, lock-free correctness, false sharing and queue design.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Implement a concurrent structure live; write tests and explain memory-order choices.",
+    "plannedHours": 15
+  },
+  {
+    "week": 92,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "OS and performance interview practice\nReview virtual memory, scheduling, context switches, page faults, caches, TLB, NUMA and profiling.",
+    "topics": "OS and performance interview practice\nReview virtual memory, scheduling, context switches, page faults, caches, TLB, NUMA and profiling.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Diagnose a deliberately slow program using perf/GDB; present root cause.",
+    "plannedHours": 15
+  },
+  {
+    "week": 93,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Networking interview practice\nReview TCP/UDP, sockets, epoll, multicast, packet loss, buffering, kernel path and latency.",
+    "topics": "Networking interview practice\nReview TCP/UDP, sockets, epoll, multicast, packet loss, buffering, kernel path and latency.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Build a small network protocol service under time pressure and test failure behavior.",
+    "plannedHours": 15
+  },
+  {
+    "week": 94,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Probability interview practice\nReview conditional probability, expectation, variance, distributions, Bayes, combinatorics and puzzles.",
+    "topics": "Probability interview practice\nReview conditional probability, expectation, variance, distributions, Bayes, combinatorics and puzzles.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Solve timed probability problems; explain derivations and verify with simulation.",
+    "plannedHours": 15
+  },
+  {
+    "week": 95,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Statistics and quant interview practice\nReview inference, regression, multiple testing, time series, OFI, execution cost and risk metrics.",
+    "topics": "Statistics and quant interview practice\nReview inference, regression, multiple testing, time series, OFI, execution cost and risk metrics.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Defend one research result, including data quality, leakage, uncertainty and limitations.",
+    "plannedHours": 15
+  },
+  {
+    "week": 96,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Quantitative finance deepening\nStudy stochastic control intuition, optimal execution, inventory control and model risk; avoid formula memorization.",
+    "topics": "Quantitative finance deepening\nStudy stochastic control intuition, optimal execution, inventory control and model risk; avoid formula memorization.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Extend simulator with inventory-aware execution/quoting and sensitivity analysis.",
+    "plannedHours": 15
+  },
+  {
+    "week": 97,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Portfolio hardening I\nReview architecture, build reproducibility, tests, CI, sanitizers, benchmark scripts and documentation.",
+    "topics": "Portfolio hardening I\nReview architecture, build reproducibility, tests, CI, sanitizers, benchmark scripts and documentation.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Harden matching engine and feed handler; make clean build/test instructions work.",
+    "plannedHours": 15
+  },
+  {
+    "week": 98,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Portfolio hardening II\nReview event framework, simulator, reproducible datasets, research notebooks and technical writing.",
+    "topics": "Portfolio hardening II\nReview event framework, simulator, reproducible datasets, research notebooks and technical writing.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Harden event framework and market-making simulator; publish limitations and benchmark methodology.",
+    "plannedHours": 15
+  },
+  {
+    "week": 99,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Open-source contribution\nStudy contribution workflow, issue triage, code review, tests, style and maintainer communication.",
+    "topics": "Open-source contribution\nStudy contribution workflow, issue triage, code review, tests, style and maintainer communication.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Submit a meaningful documentation/test/bugfix/performance contribution to a relevant project.",
+    "plannedHours": 15
+  },
+  {
+    "week": 100,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Technical writing and project defense\nStudy design docs, ADRs, benchmark methodology, experiment reproducibility and clear diagrams.",
+    "topics": "Technical writing and project defense\nStudy design docs, ADRs, benchmark methodology, experiment reproducibility and clear diagrams.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Write two technical reports and record/present project walkthroughs.",
+    "plannedHours": 15
+  },
+  {
+    "week": 101,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Mock interviews and gap analysis\nRun C++, systems, concurrency, networking, probability, quant and system-design mocks.",
+    "topics": "Mock interviews and gap analysis\nRun C++, systems, concurrency, networking, probability, quant and system-design mocks.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Complete at least 3 mocks; classify gaps by knowledge, implementation and communication.",
+    "plannedHours": 15
+  },
+  {
+    "week": 102,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Targeted job search and networking\nMap roles: low-latency C++, trading infrastructure, market data, quant developer; study firm-specific requirements.",
+    "topics": "Targeted job search and networking\nMap roles: low-latency C++, trading infrastructure, market data, quant developer; study firm-specific requirements.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Build a target list, tailor resume to evidence, request referrals and track applications.",
+    "plannedHours": 15
+  },
+  {
+    "week": 103,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Final system-design and project defense\nRehearse the full tick-to-trade design, bottleneck analysis, failure scenarios, model assumptions and trade-offs; prepare concise answers to why each design was chosen.",
+    "topics": "Final system-design and project defense\nRehearse the full tick-to-trade design, bottleneck analysis, failure scenarios, model assumptions and trade-offs; prepare concise answers to why each design was chosen.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Conduct a 60-minute project defense: architecture diagram, live demo, benchmark methodology, failure recovery and limitations.",
+    "plannedHours": 15
+  },
+  {
+    "week": 104,
+    "phase": 4,
+    "phaseName": "Architecture, Interviews and Transition",
+    "title": "Final review and transition\nReview all foundations; revise weakest areas from mocks; practice project deep dives and trade-off discussions.",
+    "topics": "Final review and transition\nReview all foundations; revise weakest areas from mocks; practice project deep dives and trade-off discussions.",
+    "resources": "MIT Distributed Systems; Raft paper; DDIA; Linux docs; revisit C++ / math / market resources",
+    "deliverable": "Deliver final portfolio, interview packet, 90-day next plan and honest skills matrix.",
+    "plannedHours": 15
+  }
+]
